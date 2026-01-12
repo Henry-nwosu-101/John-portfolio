@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.NavBar {
+  width: 100%;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* MENU */
+.NavBar-Menu {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin-left: 3.1rem;
+  margin-top: 0.625rem;
+}
+
+.NavBar-Item > a {
+  font-size: 0.8rem;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    margin-top: 0.625rem;
+  }
+
+  .NavBar-Menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem 2rem;
+    margin-left: 0;
+  }
+
+  .NavBar-Menu.active {
+    display: flex;
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+#container > article{
+    margin: 1.9rem 0.2rem;
+    display: grid;
+}
+
+ .write-up1{
+    max-width: 100%;
+    padding: 0.5rem 1.25rem;
+    margin: 0.1rem 0.5rem;
+
+    h1{
+        font-size: 1.4rem;
+        font-family: "Quicksand", sans-serif;
+        color: rgb(33, 42, 61);
+        padding: 0.2rem 0.5rem;
+    }
+
+    p{
+    font-size: 0.8rem;
+    font-family: "Quicksand", sans-serif;
+    padding: 0.2rem 0.2rem;
+    }
+
+    button{
+        max-width: 100%;
+        font-size: 0.7rem;
+        background-color: rgb(255, 100, 100);
+        color: white;
+        border: none;
+        padding: 5px 5px;
+    }
+}
+
+.image1{
+    background: url(/img/imgi_1_home-id-1.jpg) no-repeat center / cover;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 0.2rem 2rem;
+} 
+/* -------------------------------------------------------------------------------- */
+
+#container1 > article{
+    max-width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.2rem;
+    padding: 0.3rem 0.3rem;
+
+    #span1 > a{
+        font-size: 0.8rem;
+        font-family: "Quicksand", sans-serif;       
+        text-decoration: none;
+        color: black;
+    }
+
+    #span2 > a{
+        font-size: 0.85rem;
+        font-family: "Quicksand", sans-serif;   
+        text-decoration: none;
+        color: rgb(61, 159, 179);
+    }
+}
+/* -------------------------------------------------------------------------------------*/
+
+#container2 > article{
+    margin: 1.9rem 0.2rem;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.part1{
+    width: 100%;
+    padding: 0.2rem 0.2rem;
+    margin: 0.2rem 0.2rem;
+
+     h1{
+        font-size: 1rem;
+        font-family: "Quicksand", sans-serif;
+        color: rgb(33, 39, 98);
+        padding: 0.2rem 1.25rem;
+    }
+
+    span{
+        font-size: 0.8rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.2rem 1.25rem;
+        color: rgb(116, 113, 113);
+    }
+
+    p{
+    font-size: 0.9rem;
+    font-family: "Quicksand", sans-serif;
+    padding: 0.2rem 1.25rem;
+    color: rgb(116, 113, 113);
+    }
+
+}
+
+.part2{
+    width: 100%;
+    padding: 0.2rem 0.2rem;
+    margin: 0.2rem 0.2rem;
+
+     h1{
+        font-size: 1rem;
+        font-family: "Quicksand", sans-serif;
+        color: rgb(33, 39, 98);
+        padding: 0.2rem 1.25rem;
+    }
+
+    span{
+        font-size: 0.8rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.2rem 1.25rem;
+        color: rgb(116, 113, 113);
+    }
+
+    p{
+    font-size: 0.9rem;
+    font-family: "Quicksand", sans-serif;
+    padding: 0.2rem 1.25rem;
+    color: rgb(116, 113, 113);
+    }
+}
+/* --------------------------------------------------------------------------------- */
+
+#container3 > article{
+    margin: 1.9rem 0.2rem;
+    display: grid;
+}
+
+.spantext{
+   font-size: 0.9rem;
+   font-family: "Quicksand", sans-serif;
+   padding: 0.2rem 1.25rem;
+   color: rgb(33, 42, 61);
+}
+
+.img-writeup{
+    h1{
+        font-size: 1rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.5rem 1.25rem;
+    }
+
+    p{
+       font-size: 0.9rem;
+       font-family: "Quicksand", sans-serif;
+       padding: 0.5rem 1.25rem;
+       width: 400px;
+    }
+
+    button{
+        font-size: 0.8rem;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 200;
+        padding: 0.25rem 1rem;
+        margin-left: 0.6rem;
+        background-color: rgb(33, 42, 61);
+        color: white;
+        border-radius: 0.5rem;
+        border: none;
+    }
+
+    span{
+        font-size: 0.9rem;
+        font-weight: 200;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.2rem 1.25rem;
+        color: rgb(116, 113, 113);
+    }
+}
+
+.img1{
+    background: url(/img/imgi_2_it-image-1.png) no-repeat center / cover;
+    width: 16rem;
+    height: 10rem;
+    margin: 0.2rem 1.25rem;
+    border-radius: 0.62rem;
+}
+
+.img2{
+    background: url(/img/imgi_3_Vibrant\ Portraits-img.jpg) no-repeat center / cover;
+    width: 16rem;
+    height: 10rem;
+    margin: 0.2rem 1.25rem;
+    border-radius: 0.62rem;
+}
+
+.img3{
+    background: url(/img/imgi_4_R.jpeg-img.jpg) no-repeat center / cover;
+    width: 16rem;
+    height: 10rem;
+    margin: 0.2rem 1.25rem;
+    border-radius: 0.62rem;
+}
+
+.icons{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(33, 42, 61);
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+#footnote{
+    margin: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVENESS */
+@media (min-width: 768px) {
+.NavBar{
+    height: auto;
+    padding: 0rem 2rem;
+    
+    .NavBar-Menu{
+        display: flex;
+        gap: 1.6rem;
+        list-style: none;
+        margin-left: 27rem;
+        margin-top: 1.25rem;
+    }
+
+    .NavBar-Item > a{
+        font-size: 1.1rem; 
+        font-family: "Quicksand", sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+#container > article{
+    height: auto;
+    margin: 1.25rem 1.25rem;
+    display: flex;
+}
+
+.write-up1{
+    width: 40%;
+    padding: 1.25rem 1.25rem;
+    margin: 1.25rem 2.5rem;
+
+    h1{
+        font-size: 2.5rem;
+        font-family: "Quicksand", sans-serif;
+        color: rgb(33, 42, 61);
+        padding: 1.25rem 1.25rem;
+    }
+
+    p{
+        font-size: 1.06rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.625rem 1.25rem;
+    }
+
+    button{
+        width: auto;
+        font-size: 1.06rem;
+        background-color: rgb(255, 100, 100);
+        color: white;
+        border: none;
+        padding: 0.31rem 1.25rem;
+    }
+}
+
+.image1{
+    background: url(/img/imgi_1_home-id-1.jpg) no-repeat center / cover;
+    width: 15.18rem;
+    height: 15.18rem;
+    border-radius: 50%;
+    margin: 3.125rem 3.75rem;
+}
+/* -------------------------------------------------------------------------------- */
+
+#container1 > article{
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    padding: 0.625rem 0.625rem;
+
+    #span1 > a{
+        font-size: 1.25rem;
+        font-family: "Quicksand", sans-serif;       
+        text-decoration: none;
+        color: black;
+    }
+
+    #span2 > a{
+        font-size: 1.125rem;
+        font-family: "Quicksand", sans-serif;   
+        text-decoration: none;
+        color: rgb(61, 159, 179);
+    }
+}
+/* -------------------------------------------------------------------------------------*/
+#container2 > article{
+    height: 45%;
+    margin: 0.625rem 1.25rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.part1{
+    width: 100%;
+    padding: 1.25rem 1.25rem;
+    margin: 1.25rem 2.5rem;
+
+     h1{
+        font-size: 1.875rem;
+        font-family: "Quicksand", sans-serif;
+        color: rgb(33, 39, 98);
+        padding: 1.25rem 1.25rem;
+    }
+
+    span{
+        font-size: 1.065rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 1.25rem 1.25rem;
+        color: rgb(116, 113, 113);
+    }
+
+    p{
+    font-size: 1.065rem;
+    font-family: "Quicksand", sans-serif;
+    padding: 1.25rem 1.25rem;
+    color: rgb(116, 113, 113);
+    }
+
+}
+
+.part2{
+    width: 100%;
+    padding: 1.25rem 1.25rem;
+    margin: 1.25rem 2.5rem;
+
+    h1{
+        font-size: 1.875rem;
+        font-family: "Quicksand", sans-serif;
+        color: rgb(33, 39, 98);
+        padding: 1.25rem 1.25rem;
+    }
+
+    span{
+        font-size: 1.065rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 1.25rem 1.25rem;
+        color: rgb(116, 113, 113);
+    }
+
+    p{
+    font-size: 1.065rem;
+    font-family: "Quicksand", sans-serif;
+    padding: 1.25rem 1.25rem;
+    color: rgb(116, 113, 113);
+    }
+}
+/* --------------------------------------------------------------------------------- */
+
+#container3 > article{
+    margin: 1.25rem 1rem;
+    display: flex;
+}
+
+.spantext{
+   font-size: 1.065rem;
+   font-family: "Quicksand", sans-serif;
+   padding: 1.25rem 1.25rem;
+   color: rgb(33, 42, 61);
+}
+
+.img-writeup{
+    h1{
+        font-size: 1.375rem;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.9375rem 0.9375rem;
+    }
+
+    p{
+       font-size: 1.06rem;
+       font-family: "Quicksand", sans-serif;
+       padding: 0.9375rem 0.9375rem;
+       width: 57%;
+    }
+
+    button{
+        font-size: 1.06rem;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        padding: 0.3125rem 0.3125rem;
+        margin-left: 0.625rem;
+        background-color: rgb(33, 42, 61);
+        color: white;
+        border-radius: 1.25rem;
+        border: none;
+    }
+
+    span{
+        font-size: 1.06rem;
+        font-weight: 500;
+        font-family: "Quicksand", sans-serif;
+        padding: 0.9375rem 0.9375rem;
+        color: rgb(116, 113, 113);
+    }
+}
+
+.img1{
+    background: url(/img/imgi_2_it-image-1.png) no-repeat center / cover;
+    width: 41.311rem;
+    height: 16.393rem;
+    margin: 0.9375rem 1.25rem;
+    border-radius: 0.625rem;
+}
+
+.img2{
+    background: url(/img/imgi_3_Vibrant\ Portraits-img.jpg) no-repeat center / cover;
+    width: 41.311rem;
+    height: 16.393rem;
+    margin: 0.9375rem 1.25rem;
+    border-radius: 0.625rem;
+}
+
+.img3{
+    background: url(/img/imgi_4_R.jpeg-img.jpg) no-repeat center / cover;
+    width: 41.311rem;
+    height: 16.393rem;
+    margin: 0.9375rem 1.25rem;
+    border-radius: 0.625rem;
+}
+
+.icons{
+    margin-top: 8.125rem;
+    text-align: center;
+    font-size: 2.437rem;
+    color: rgb(33, 42, 61);
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+#footnote{
+    margin: 1.0625rem;
+    text-align: center;
+    font-size: 1.475rem;
+    font-family: "Quicksand", sans-serif;
+}
+    
+}
